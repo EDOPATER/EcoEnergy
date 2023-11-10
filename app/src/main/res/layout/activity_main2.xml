@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:padding="20sp"
+        android:background="@color/ecocolor"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="ECO ENERGY" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tV_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:textSize="26sp"
+            android:textColor="@color/ecocolor"
+            android:textStyle="bold"
+            android:text="FORMULARIO" />
+
+        <EditText
+            android:id="@+id/eT1"
+            style="@style/style_editText"
+            android:hint="Nombre"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/eT2"
+            style="@style/style_editText"
+            android:hint="Dirección"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/eT3"
+            style="@style/style_editText"
+            android:hint="Teléfono"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/eT4"
+            style="@style/style_editText"
+            android:hint="Correo"
+            android:inputType="textEmailAddress" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rB1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casa" />
+
+            <RadioButton
+                android:id="@+id/rB2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apartamento" />
+
+            <RadioButton
+                android:id="@+id/rB3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rural" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cB1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paneles Solares" />
+
+            <CheckBox
+                android:id="@+id/cB2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aerogeneradores" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cB3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otros Sistemas de Energías Renovables" />
+
+        <Button
+            android:id="@+id/btn_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/ecocolor"
+            android:textSize="26sp"
+            app:cornerRadius="15sp"
+            android:text="Enviar" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textAlignment="center"
+        android:padding="10sp"
+        android:background="@color/ecocolor"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="TODOS A LA U"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
